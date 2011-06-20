@@ -1,0 +1,33 @@
+#summary One-sentence summary of this page.
+#labels Phase-Implementation
+
+= Introduction =
+
+This library is designed to work with http://cinemate.cc/api/.
+
+
+= Details =
+
+1) Download the compiled dll library
+2) Reference it in your VisualStudio project
+3) Create the instance of CinemateAPI class
+
+var api = new CinemateAPI.CinemateAPI("[HERE IS YOUR MEMBER CODE]");
+or
+var api = new CinemateAPI.CinemateAPI();
+
+4) Use this instance to get the information from the Cinemate.cc website
+
+var NewMovies = api.Movie_New();
+
+var MovieSearch = api.Movie_Search("Трансформеры");
+
+var SiteStatistic = api.Stats_New();
+
+var PersonSearch = api.Person_Search("Джек");
+
+var WatchList = api.Account_Watchlist();
+
+var Updates = api.Account_Updatelist();
+
+var Account = api.Account_Profile();
