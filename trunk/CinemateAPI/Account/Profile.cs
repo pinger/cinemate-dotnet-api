@@ -40,7 +40,7 @@ namespace CinemateAPI.Account
 		/// число бронзовых наград
 		/// </summary>
 		[XmlElement("bronze_badges")]
-		public int BadgesBronseCount;
+		public int BadgesBronzeCount;
 
 		/// <summary>
 		/// число непрочитанных личных сообщений

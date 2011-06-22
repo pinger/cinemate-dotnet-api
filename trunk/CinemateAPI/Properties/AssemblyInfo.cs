@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("CinemateAPI")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Cinemate RESTful API Client Library")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Anubis")]
 [assembly: AssemblyProduct("CinemateAPI")]
-[assembly: AssemblyCopyright("Copyright ©  2011")]
+[assembly: AssemblyCopyright("Copyright © 2011")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
