@@ -148,7 +148,7 @@ namespace CinemateAPI
 		{
 			if (string.IsNullOrWhiteSpace(Passkey))
 			{
-				throw new ArgumentException("Вым нужно передать Passkey в конструктор класса API чтобы использовать этот метод");
+				throw new ArgumentException("Вым нужно передать Passkey в конструктор класса API, чтобы использовать этот метод");
 			}
 		}
 
