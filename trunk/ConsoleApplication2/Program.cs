@@ -10,11 +10,9 @@ namespace ConsoleApplication2
     {
         static void Main(string[] args)
         {
-            var api = new CinemateApi("Anubis", "toortoor");
-
-            var res1 = api.GetProfile();
-            var res2 = api.GetUpdatelist();
-            var res3 = api.GetWatchlist();
+            var api = new CinemateApi("29561d6e194051af52c5c6959c107f9df8804dbf")
+                          {ApiKey = "9ea8780481b19c151ec3b9d8d983c9a804b70218"};
+            var res = api.GetMovieInfo(2194);
         }
     }
 }
