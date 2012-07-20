@@ -1,0 +1,39 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="CinemateAPI.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="BaseUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://cinemate.cc/api/2.0/</Value>
+    </Setting>
+    <Setting Name="AuthUrlPattern" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">account/auth/?username={0}&amp;password={1}&amp;format=json</Value>
+    </Setting>
+    <Setting Name="ProfileUrlPattern" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">account/profile/?passkey={0}&amp;format=json</Value>
+    </Setting>
+    <Setting Name="UpdateListUrlPattern" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">account/updatelist/?passkey={0}&amp;newonly={1}&amp;format=json</Value>
+    </Setting>
+    <Setting Name="WatchListUrlPattern" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">account/watchlist/?passkey={0}&amp;format=json</Value>
+    </Setting>
+    <Setting Name="MovieListUrlPart" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">movie/list/?format=json</Value>
+    </Setting>
+    <Setting Name="MovieGetUrlPattern" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">movie/get/?apikey={0}&amp;id={1}&amp;format=json</Value>
+    </Setting>
+    <Setting Name="PersonGetUrlPattern" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">person/get/?apikey={0}&amp;id={1}&amp;format=json</Value>
+    </Setting>
+    <Setting Name="MovieSearchUrlPattern" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">movie/search/?term={0}&amp;format=json</Value>
+    </Setting>
+    <Setting Name="PersonSearchUrlPattern" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">person/search/?term={0}&amp;format=json</Value>
+    </Setting>
+    <Setting Name="StatsUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">stats/new/?format=json</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
