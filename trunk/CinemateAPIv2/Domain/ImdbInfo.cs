@@ -28,5 +28,10 @@ namespace CinemateAPI.Domain
 
         [DataMember]
         private int votes;
+
+        public override string ToString()
+        {
+            return string.Format("Rating: {0}, Votes: {1}", Rating, Votes);
+        }
     }
 }

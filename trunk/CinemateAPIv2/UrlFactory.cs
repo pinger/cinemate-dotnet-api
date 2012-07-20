@@ -60,9 +60,19 @@ namespace CinemateAPI
             return ConcatBase(Settings.Default.MovieGetUrlPattern, apiKey, id);
         }
 
+        public static string GetPersonSearchUrl(string term)
+        {
+            return ConcatBase(Settings.Default.PersonSearchUrlPattern, term);
+        }
+
         public static string GetPersonInfoUrl(string apiKey, long id)
         {
             return ConcatBase(Settings.Default.PersonGetUrlPattern, apiKey, id);
+        }
+
+        public static string GetStatUrl()
+        {
+            return string.Concat(Settings.Default.BaseUrl, Settings.Default.StatsUrl);
         }
 
         private static string OrderByToString(OrderBy orderBy)
