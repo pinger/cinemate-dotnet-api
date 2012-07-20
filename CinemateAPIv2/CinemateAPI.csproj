@@ -36,7 +36,13 @@
     <Reference Include="System.XML" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Domain\MovieInfoResult.cs" />
+    <Compile Include="Domain\PersonInfoResult.cs" />
+    <Compile Include="Domain\PersonSearchItem.cs" />
+    <Compile Include="Domain\PersonSearchResult.cs" />
+    <Compile Include="Domain\Photo.cs" />
     <Compile Include="Domain\Profile.cs" />
+    <Compile Include="Domain\Status.cs" />
     <Compile Include="Domain\Update.cs" />
     <Compile Include="Domain\UpdateItem.cs" />
     <Compile Include="Domain\UpdateItemObject.cs" />

@@ -25,7 +25,7 @@ namespace CinemateAPI
 
         private static string FixJsonDate(string text)
         {
-            return Regex.Replace(text, @"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}", ConvertDateStringToJsonDate);
+            return Regex.Replace(text, @"\d{4}-\d{2}-\d{2}(T\d{2}:\d{2}:\d{2})?", ConvertDateStringToJsonDate);
         }
 
         /// <summary>
@@ -104,9 +104,24 @@ namespace CinemateAPI
             return GetEntityFromJson<MovieListResult>(UrlFactory.GetMovieSearchUrl(term));
         }
 
-        public CinemateFilmInfo GetMovieInfo(long id)
+        public MovieInfoResult GetMovieInfo(long id)
         {
-            return GetEntityFromJson<CinemateFilmInfo>(UrlFactory.GetMovieInfoUrl(apikey, id));
+            return GetEntityFromJson<MovieInfoResult>(UrlFactory.GetMovieInfoUrl(apikey, id));
+        }
+
+        public PersonSearchResult SearchPerson(string term)
+        {
+            return GetEntityFromJson<PersonSearchResult>(UrlFactory.GetPersonSearchUrl(term));
+        }
+
+        public PersonInfoResult GetPersonInfo(long id)
+        {
+            return GetEntityFromJson<PersonInfoResult>(UrlFactory.GetPersonInfoUrl(apikey, id));
+        }
+
+        public Stats GetStats()
+        {
+            return GetEntityFromJson<Stats>(UrlFactory.GetStatUrl());
         }
 
         #endregion
@@ -132,7 +147,7 @@ namespace CinemateAPI
                     return (T)ser.ReadObject(ms);
                 }
             }
-            catch(Exception)
+            catch(Exception ex)
             {
                 return null;
             }
